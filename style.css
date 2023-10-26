@@ -1,0 +1,47 @@
+.produtos-container {
+    display: flex; /* Usa display flex para alinhar produtos na mesma linha */
+    justify-content: space-between; /* Espaçamento uniforme entre produtos */
+    flex-wrap: wrap; /* Quebra a linha se não houver espaço suficiente */
+    background-color: #ffffff; /* Adicione o código de cor desejado aqui */
+    margin: 0; /* Remova qualquer margem */
+    padding: 0; /* Remova qualquer preenchimento */
+    width: 100%; /* Define a largura para cobrir a largura total da página */
+    box-sizing: border-box; /* Inclui o preenchimento e a borda na largura */
+}
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.TextW {
+    color: #FFF; /* Substitua #FFF pelo código da cor branca desejada */
+}
+
+
+.produto {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.produto img {
+    max-width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #0056b3;
+}
