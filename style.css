@@ -1,4 +1,4 @@
-.produtos-container {
+.horizontal-container {
     display: flex; /* Usa display flex para alinhar produtos na mesma linha */
     justify-content: space-between; /* Espaçamento uniforme entre produtos */
     flex-wrap: wrap; /* Quebra a linha se não houver espaço suficiente */
@@ -22,14 +22,14 @@ body {
     text-align: center;
     padding: 20px;
 
-    width: calc(33.33% - 20px);
+    width: calc(33.33% - 10px);
     box-sizing: border-box;
     vertical-align: top;
 }
 
 .produto img {
     max-width: 100%;
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .botao {
@@ -44,4 +44,41 @@ body {
 
 .botao:hover {
     background-color: #0056b3;
+}
+.Habilities {
+    display: flex;
+    align-items: center; /* Alinhar verticalmente os ícones e o texto */
+}
+.Habilities img {
+    width: 128px; /* Define a largura desejada para todas as imagens */
+    height: 128px; /* Define a altura desejada para todas as imagens */
+    object-fit: contain; /* Isso garante que a imagem mantenha sua proporção original e se ajuste ao espaço especificado */
+}
+.ctext {
+    margin-left: 7px; /* Adicione a margem desejada */
+}
+.cicon {
+    margin-left: 8px;
+}
+.horizontal-container2 {
+    display: flex; /* Usa display flex para alinhar produtos na mesma linha */
+    justify-content: space-between; /* Espaçamento uniforme entre produtos */
+    flex-wrap: wrap; /* Quebra a linha se não houver espaço suficiente */
+    margin: 50; /* Remova qualquer margem */
+    padding: 50; /* Remova qualquer preenchimento */
+    width: 100%; /* Define a largura para cobrir a largura total da página */
+    box-sizing: border-box; /* Inclui o preenchimento e a borda na largura */
+}
+.break-line {
+    max-width: 200px; /* Defina a largura máxima desejada */
+    word-wrap: break-word; /* Permite a quebra de palavras */
+    text-align: center;
+}
+.skills-list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1280px; /* Defina a largura máxima desejada */
+    margin: 0 auto; /* Centralize horizontalmente */
+    padding: 0 20px; /* Adicione preenchimento nas bordas laterais */
 }
