@@ -17,7 +17,7 @@ body {
 }
 
 
-.produto {
+.product {
     display: inline-block;
     text-align: center;
     padding: 20px;
@@ -27,12 +27,12 @@ body {
     vertical-align: top;
 }
 
-.produto img {
+.product img {
     max-width: 100%;
     border-radius: 15px 15px 15px 15px;
 }
 
-.botao {
+.button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #007BFF;
