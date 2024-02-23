@@ -48,6 +48,7 @@ body {
 .Habilities {
     display: flex;
     align-items: center; /* Alinhar verticalmente os ícones e o texto */
+    margin-bottom: 20px;
 }
 .Habilities img {
     width: 128px; /* Define a largura desejada para todas as imagens */
