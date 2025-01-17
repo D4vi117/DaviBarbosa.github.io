@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="map.css">
+
+<script src="chapelSelector.js"></script>
+<div>
+    <h1>Mapa das Capelas</h1>
+    <iframe 
+        id="mapframe"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7359.392192912678!2d-43.501861!3d-22.7395344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x995d7557630609%3A0xbb628aee99177a10!2sIgreja%20Nossa%20Senhora%20do%20Perp%C3%A9tuo%20Socorro%20e%20S%C3%A3o%20Judas%20Tadeu!5e0!3m2!1spt-BR!2sbr!4v1737036550216!5m2!1spt-BR!2sbr"
+        width="600"
+        height="500"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <div id="selectors">
+        <button onclick="changeLocation(-1)"><</button>
+        <p id="chapelName">Igreja Nossa Senhora do Perpétuo Socorro e<br>São Judas Tadeu</p>
+        <button onclick="changeLocation(1)">></button>
+    </div>
+</div>
