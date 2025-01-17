@@ -18,10 +18,10 @@ async function loadHTMLContent(filePath) {
 }
 
 // Exemplo de uso:
-loadHTMLContent(pages[contentIndex]).then(content => {
-    console.log(content); // A string do HTML carregado será exibida no console
-});
 function selectContent(value){
     contentIndex = (contentIndex + value + pages.length) % pages.length;
-    document.getElementById("mainContent").innerHTML = pages[contentIndex];
+    
+    loadHTMLContent(pages[contentIndex]).then(content => {
+        document.getElementById("mainContent").innerHTML = pages[contentIndex];
+    });
 }
