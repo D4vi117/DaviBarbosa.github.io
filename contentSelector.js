@@ -1,9 +1,9 @@
 const pages = [
     "pages/mapa/map.html"
-    
-]
+];
 
-contentIndex = 0
+let contentIndex = 0;
+
 async function loadHTMLContent(filePath) {
     try {
         const response = await fetch(filePath);
@@ -18,10 +18,11 @@ async function loadHTMLContent(filePath) {
 }
 
 // Exemplo de uso:
-function selectContent(value){
+function selectContent(value) {
     contentIndex = (contentIndex + value + pages.length) % pages.length;
-    
+
+    // Corrigido: Agora você está atribuindo o conteúdo carregado ao innerHTML
     loadHTMLContent(pages[contentIndex]).then(content => {
-        document.getElementById("mainContent").innerHTML = pages[contentIndex];
+        document.getElementById("mainContent").innerHTML = content;
     });
 }
