@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>N. Sra. do P. Socorro</title>
-    
+
     <link rel="stylesheet" href="style.css">
     <script src="contentSelector.js"></script>
 </head>
@@ -27,16 +27,23 @@
         </div>
         <div id="topButtons">
             <button id=>Início</button>
-            <button onclick="window.location.href='/capelas';">Capelas Missas e Horários</button>
+            <button onclick="selectContent(0)">Capelas Missas e Horários</button>
             <button id=>Notícias e Eventos</button>
             <button id=>Galeria</button>
             <button id=>Doações</button>
             <button id=>Contato</button>
         </div>
-        <div id="mainContent" style="border-style: none; overflow: hidden;">
-           
-        </div>
-        
+        <script>
+            function resizeIframe(obj) {
+              obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+            }
+          </script>
+        <iframe 
+        id="mainContent" 
+        src="" 
+        frameborder="0" 
+        style="border-style: none; height: 0; overflow: hidden"
+        onload="resizeIframe(this)"></iframe>
     </div>
     <footer id="footer">© 2025 Associação Civil Nossa Senhora do Perpétuo Socorro.<br>Todos os direitos reservados</footer>
 </body>

@@ -14,7 +14,7 @@ body {
     background: linear-gradient(to bottom, #cce7ff, #fefbf2);
     min-height: 100vh; /* Garante que o body tenha ao menos a altura total da tela */
     margin: 0;
-    font-family: Arial, sans-serif; /* Fonte padrão para conteúdo */
+    font-family: 'Times New Roman', sans-serif; /* Fonte padrão para conteúdo */
 }
 
 #wrapper {
@@ -72,10 +72,6 @@ header img {
     width: 30%;   /* Ajuste o tamanho do ícone */
     height: auto;   /* Manter a proporção */
 }
-
-
-
-
 /* Estilizar o container dos botões */
 #topButtons {
     display: flex; /* Itens lado a lado */
@@ -102,8 +98,8 @@ header img {
 
 #mainContent {
     width: 100%; /* Um valor mínimo para garantir que a div tenha alguma altura inicial */
+    height: auto;
     display: flex;
-
     justify-content: center;
     align-items: center;
     flex-direction: column;
